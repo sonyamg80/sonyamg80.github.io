@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>homework 11</title>
+
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <img src="Images/image.jpg" class="bg">
+    <div class="container">
+        <nav class="navbar navbar-expand-lg">
+            <button onclick="window.location.href='../index.html'" type="button" class="btn btn-default btn-sm"
+                data-toggle="collapse" data-target="#navbarCollapse">Jerome bio</button>
+            <span class="navbar-toggler-icon"></span>
+            <button onclick="window.location.href='testcon.html'" type="button" class="btn btn-default btn-sm"
+                data-toggle="collapse" data-target="#navbarCollapse">Weather table</button>
+
+            <div class="btn-group">
+                <button type="button" class="btgn btn-default btn-sm dropdown-toggle" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">
+                    Weather Plots<span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a href="pages/maxtemp.html" class="dropdown-item">Max Temperature</a></li>
+                    <li><a href="pages/humidity.html" class="dropdown-item">Humidity</a></li>
+                    <li><a href="pages/cloudiness.html" class="dropdown-item">Cloudiness</a></li>
+                    <li><a href="pages/comp.html" class="dropdown-item">Comparison</a></li>
+                </ul>
+            </div>
+
+        </nav>
+
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    </br>
+    </br>
+    
+    <div class="row">
+    <div class="col-lg-12" id="index_image">
+            <a href="pages/maxtemp.html"><img src="Images/temp_max.png" 
+            alt="Max temp " width="300" height="300" ></a>
+            <a href="pages/humidity.html"><img src="Images/Humidity.png" 
+            alt="Humidity" width="300" height="300" /></a>
+                  
+      
+    </div>    
+    <div class="col-lg-12" id="index_lower_image">
+            <a href="pages/cloudiness.html"><img src="Images/cloudiness.png" 
+            alt="Cloudiness" width="200" height="200"/></a>
+            <a href="pages/windspeed.html"><img src="Images/windspeed_plotly.png"
+            alt="windspeed" width="200" height="200"/></a> 
+                  
+      
+    </div>    
+    <p class="main"> The Purpose of this project was to analyze how weather changes as you get closer to
+        the equator. To accomplish this analysis,I first pulled data from the OpenWeatherMap API to
+        assemble a dataset on over 500 citys.
+        </br>
+        </br>
+        After assembling the dataset, I used Matplotlib to plot various aspects of the weather vs latitude.
+        Factors I looked at included: Temperature, Cloudiness, Wind speed and humidity.
+        </br>
+        </br>
+        This site provides the source data and visualizations created as part of the analysis, as well as
+        explanations and descriptions of any trends and correlations witnessed. 
+    </p>
+   
+    
+
+
+   
+</body>
+
+</html>

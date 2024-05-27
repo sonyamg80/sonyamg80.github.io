@@ -1,0 +1,213 @@
+/* html {
+    background: url(images/image.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    
+} */
+
+button.btn {
+    /* font-size: 25px;
+    color: #000; */
+    display: block;
+    background-color: black;
+    margin: 0 auto;
+    padding: 0;
+    display: table-cell;
+    color: white;
+    width: 100px;
+    height: 40px;
+    text-align: center;
+}
+
+.btn-group {
+    display: block;
+    background-color: black;
+    color: white;
+    margin: 0 auto;
+    padding: 0;
+    display: table-cell;
+}
+
+.btgn {
+    display: block;
+    background-color: black;
+    color: white;
+}
+
+img.bg {
+    /* Set rules to fill background */
+    min-height: 100%;
+    min-width: 1024px;
+    /* Set up proportionate scaling */
+    width: 100%;
+    height: auto;
+    /* Set up positioning */
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+@media screen and (max-width: 1024px) {
+    /* Specific to this particular image */
+    img.bg {
+        left: 50%;
+        margin-left: -512px;
+        /* 50% */
+    }
+}
+
+h1 {
+    color: white;
+}
+
+#test {
+    background-color: black;
+    color: white;
+    border-style: solid;
+    border-width: 5px;
+    border-color: skyblue;
+}
+
+#index_image {
+    padding: 0;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  text-align: center;
+}
+#index_image img {
+    height: 350px;
+    width: 350px;
+    vertical-align: middle;
+
+}
+#images {
+    padding: 0;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  text-align: center;
+}
+
+#images img{
+    height: 600px;
+    width: 600px;
+    vertical-align: middle;
+
+}
+
+.column {
+    float: left;
+    width: 33.33%;
+    padding: 5px;
+    
+  }
+  #index_lower_image {
+    padding: 0;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  text-align: center;
+}
+#index_lower_image img {
+    height: 350px;
+    width: 350px;
+    vertical-align: middle;
+    margin-bottom: -15%
+
+}
+  
+  /* Clear floats after image containers */
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+
+
+
+h1.intro {
+    position: relative;
+    top: 10%;
+    text-align: center;
+    background-color: transparent;
+    color: white;
+}
+#intro {
+    position: relative;
+    top: 20%;
+    text-align: center;
+    background-color: turquoise;
+    color: white;
+    /* background: url(Images/image.jpg) center center cover no-repeat fixed; */
+    /* -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover; */
+}
+#header {
+    position: absolute;
+    top: 20%;
+    text-align: right;
+}
+#graph {
+    margin-bottom: -30%
+}
+p.main {
+    position: relative;
+    margin-top: -20%;
+    text-align: center;
+    font-size: 20px;
+    margin: 18%;
+    background-color: black;
+    color: white;
+    border-style: solid;
+    border-width: 5px;
+    border-color: skyblue;
+}
+p.description {
+    position: relative;
+    top: -50%;
+    text-align: center;
+    font-size: 20px;
+    margin: 30%;
+    background-color: black;
+    color: white;
+    border-style: solid;
+    border-width: 5px;
+    border-color: skyblue;
+}
+figcaption.caption {
+    text-align: center;
+    font-size: 24px;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+}
+#comp_note {
+    left: 10%;
+}
+#CityData {
+    position: absolute;
+    top: 20%;
+    left: 25%;
+}
+#bot_header {
+    position: relative;
+    top: 10%;
+    text-align: center;
+    color: white;
+}
+#colum_image {
+    float: right;
+    width: 30%;
+    padding: 5px;
+}
+#image_rows::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+

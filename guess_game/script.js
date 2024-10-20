@@ -16,7 +16,6 @@ document.querySelector('.guess').value = 10;
 */
 // have to use .addEventListener  and in ( ) define  it is  listening for this is a
 // click  and you have to then define what  the event does with a function .
-
 // define what the secreit number
 
 let secretNumber = Math.trunc(Math.random() * 20) + 1;
@@ -24,10 +23,28 @@ let score = 20;
 let highscore = 0;
 
 // Refactor same code in to function
+//message function
 const displayMessage = function (message) {
   document.querySelector('.message').textContent = message;
 };
+// body color function
+const displayBackground = function (body) {
+  document.querySelector('body').style.backgroundColor = body;
+};
+//Secret number function
+const numberSecret = function (number) {
+  document.querySelector('.number').textContent = number;
+};
+//Syle with function
+const syleWidth = function (syle) {
+  document.querySelector('.number').style.width = syle;
+};
+// score function
+const scoreText = function (score) {
+  document.querySelector('.score').textContent = score;
+};
 
+// click event to check match number
 document.querySelector('.check').addEventListener('click', function () {
   const guess = Number(document.querySelector('.guess').value);
 
@@ -40,10 +57,10 @@ document.querySelector('.check').addEventListener('click', function () {
     //When Player wins
     // document.querySelector('.message').textContent = 'Correct Number!';
     displayMessage('Correct');
-    document.querySelector('.number').textContent = secretNumber;
-    document.querySelector('body').style.backgroundColor = '#60b347';
+    numberSecret(secretNumber);
+    displayBackground('#60b347');
 
-    document.querySelector('.number').style.width = '30rem';
+    syleWidth('30rem');
 
     if (score > highscore) {
       highscore = score;
@@ -55,13 +72,13 @@ document.querySelector('.check').addEventListener('click', function () {
       // used ternary operator
       displayMessage(guess > secretNumber ? 'Too High !' : 'Too Low  ! ');
       score--;
-      document.querySelector('.score').textContent = score;
+      scoreText(score);
     } else {
       displayMessage('You Lost the Game');
       // document.querySelector('.message').textContent = 'You Lost the Game  !';
-      document.querySelector('.score').textContent = 0;
-      document.querySelector('body').style.backgroundColor = '#860111';
-      document.querySelector('.number').style.width = '30rem';
+      scoreText(0);
+      displayBackground('#860111');
+      syleWidth('30rem');
     }
   }
 });
@@ -71,9 +88,9 @@ document.querySelector('.again').addEventListener('click', function () {
   secretNumber = Math.trunc(Math.random() * 20) + 1;
   displayMessage('Start Guessing...');
   // document.querySelector('.message').textContent = 'Start Guessing... ';
-  document.querySelector('.score').textContent = score;
-  document.querySelector('.number').textContent = '?';
+  scoreText(score);
+  numberSecret('?');
   document.querySelector('.guess').value = '';
-  document.querySelector('body').style.backgroundColor = '#222';
-  document.querySelector('.number').style.width = '15rem';
+  displayBackground('#222');
+  syleWidth('15rem');
 });

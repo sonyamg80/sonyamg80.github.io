@@ -10,7 +10,7 @@ html {
 }
 
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   color: #444;
   background-color: #ffffff;
   height: 100vh;
@@ -88,6 +88,7 @@ nav {
   gap: 2rem;
 
   /* NOTE This creates the fade in/out anumation */
+  /*makes main app disapare when not login and appear when login  */
   opacity: 0;
   transition: all 1s;
 }

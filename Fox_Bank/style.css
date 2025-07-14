@@ -1,7 +1,7 @@
 /* The page is NOT responsive. You can implement responsiveness yourself if you wanna have some fun 😃 */
 
 :root {
-  --color-primary: #5ec576;
+  --color-primary: #ae9c9c;
   --color-secondary: #ffcb03;
   --color-tertiary: #ff585f;
   --color-primary-darker: #4bbb7d;
@@ -30,7 +30,7 @@ body {
   font-weight: 300;
   color: #444;
   line-height: 1.9;
-  background-color: #f3f3f3;
+  background-color: #ffffff;
 }
 
 /* GENERAL ELEMENTS */
@@ -131,7 +131,7 @@ img {
 }
 
 .nav__logo {
-  height: 4.5rem;
+  height: 7rem;
   transition: all 0.3s;
 }
 

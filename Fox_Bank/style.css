@@ -155,6 +155,31 @@ img {
   transition: all 0.3s;
 }
 
+.button:link,
+.button:visited {
+  padding: 1.5rem 2rem;
+  border-radius: 2rem;
+  background-color: var(--color-tertiary-darker);
+  color: #222;
+  font-size: 1.5rem;
+  font-weight: 400;
+  text-decoration: none;
+}
+
+.button:hover,
+.button:active {
+  color: inherit;
+  background-color: var(--color-primary);
+  color: #222;
+  text-decoration: none;
+}
+.login__link:hover,
+.login__link:active {
+  color: inherit;
+  background-color: var(--color-primary);
+  color: #222;
+}
+
 .nav__link--btn:link,
 .nav__link--btn:visited {
   padding: 0.8rem 2.5rem;
@@ -201,6 +226,9 @@ h1 {
 h4 {
   font-size: 2.4rem;
   font-weight: 500;
+}
+#login {
+  color: var(--color-tertiary-opacity);
 }
 
 .header__img {

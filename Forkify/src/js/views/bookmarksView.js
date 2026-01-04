@@ -7,8 +7,11 @@ class BookmarksView extends View {
   _errorMessage = 'No bookmars yet. Find a nice recipe and book mark it. ';
   _message = '';
 
+  addHandlerRender(handler) {
+    window.addEventListener('load', handler);
+  }
+
   _generateMarkup() {
-    console.log(this._data);
     return (
       this._data
         // adding false , will case  generate Markup to return as a string

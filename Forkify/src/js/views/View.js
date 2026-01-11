@@ -2,6 +2,14 @@
 import icons from 'url:../../img/icons.svg'; // parcel 2
 export default class View {
   _data;
+  /**
+   * Render the recived object to the DOM
+   * @param {Object | Object []} data The data to be rendered (e.g. recipe)
+   * @param {boolean} [render = true] If false, create markup string insend of rednering to DOM
+   * @returns {undefined | string} A markup string is returned if redner = false
+   * @this {Object}View instance
+   * @author Sonya M Green
+   */
   render(data, render = true) {
     if (!data || (Array.isArray(data) && data.length === 0))
       return this.renderError;

@@ -2,12 +2,13 @@
   "name": "forkify",
   "version": "1.0.0",
   "description": "Recipe app",
+  "default": "index.html",
   "license": "ISC",
   "author": "Sonya Green",
   "type": "commonjs",
   "scripts": {
     "start": "parcel index.html",
-    "build": "parcel build index.html"
+    "build": "parcel build index.html --dist-dir ./dist"
   },
   "devDependencies": {
     "@parcel/transformer-sass": "^2.16.1",

@@ -1,0 +1,41 @@
+.pdf {
+  width: 100%;
+  align-content: center;
+  aspect-ratio: 4 / 3;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+.pdf,
+html {
+  font-size: 100%;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  color: #ffffff;
+  line-height: 1.9;
+  background-color: #000000;
+}
+
+/* html,
+body {
+  align-items: center;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: #000000;
+} */
+h1,
+h3 {
+  text-align: center;
+}
+
+h1 {
+  color: rgb(255, 255, 255);
+}

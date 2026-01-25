@@ -1,0 +1,126 @@
+* {
+  box-sizing: border-box;
+}
+h1 {
+  text-align: center;
+  height: 50px;
+}
+p {
+  border-bottom: 1px dotted;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  width: 800px;
+}
+body {
+  font-family: "Open Sans";
+  background: #2c3e50;
+  color: #ecf0f1;
+  line-height: 1.618em;
+}
+.wrapper {
+  max-width: 75em;
+  width: 100%;
+  margin: 0 auto;
+}
+.tabs {
+  position: relative;
+  margin: 10rem 5rem;
+  background: hsl(165, 40%, 98%);
+  height: 30rem;
+}
+.tabs::before,
+.tabs::after {
+  content: "";
+  display: table;
+}
+.tabs::after {
+  clear: both;
+}
+.tab {
+  float: left;
+}
+.tab-switch {
+  display: none;
+}
+.tab-label {
+  position: relative;
+  display: block;
+  line-height: 2.75em;
+  height: 3em;
+  padding: 0 1.618em;
+  background: #1abc9c;
+  border-right: 0.125rem solid #16a085;
+  color: #fff;
+  cursor: pointer;
+  top: 0;
+  transition: all 0.25s;
+}
+.tab-label:hover {
+  top: -0.25rem;
+  transition: top 0.25s;
+}
+.tab-content {
+  height: 20rem;
+
+  position: absolute;
+  z-index: 1;
+  top: 2.75em;
+  left: 0;
+
+  background: #fff;
+  color: #2c3e50;
+  /* border-bottom: 0.25rem solid #bdc3c7; */
+  opacity: 0;
+  transition: all 0.35s;
+}
+.tab-switch:checked + .tab-label {
+  background: #fff;
+  color: #2c3e50;
+  border-bottom: 0;
+  border-right: 0.125rem solid #fff;
+  transition: all 0.35s;
+  z-index: 1;
+  top: -0.0625rem;
+}
+.tab-switch:checked + label + .tab-content {
+  z-index: 2;
+  opacity: 1;
+  transition: all 0.35s;
+}
+.sidenav {
+  height: 100%;
+  width: 200px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+.sidenav a {
+  padding: 6px 6px 6px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.main {
+  margin-left: 200px; /* Same as the width of the sidenav */
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {
+    padding-top: 15px;
+  }
+  .sidenav a {
+    font-size: 18px;
+  }
+}
